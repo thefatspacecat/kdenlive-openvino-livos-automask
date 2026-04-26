@@ -38,17 +38,14 @@ cd LiVOS
 pip install -e .
 ```
 
-**5. Download LiVOS weights:**
-Run the included download script from inside the LiVOS directory you just cloned. This will automatically create a `./weights` folder and download the models into it.
-```bash
-python ./download.py
-```
+**5. Download weights:**
+You can download the needed weights from this repo's release section
 
 **6. Navigate to your Kdenlive installation's automask folder and replace the sam-objectmask.py script with the one from this repository (It was in `/usr/share/kdenlive/scripts/automask` for me)**
 ```text
 path/to/scripts/automask/
 ├── sam-objectmask.py          # The updated python script
-├── mobile_sam.pt              # MobileSAM weights (auto downloads)
+├── mobile_sam.pt              # MobileSAM weights
 └── weights/
     └── livos-nomose-480p.pth  # Downloaded LiVOS weights (youll have to copy them after download.py)
 ```
