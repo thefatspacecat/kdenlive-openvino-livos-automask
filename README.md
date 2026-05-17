@@ -2,6 +2,8 @@
 
 This is a custom script designed to replace Kdenlive's default SAM 2 auto-masking backend. Instead of running a heavy PyTorch SAM 2 model for video propagation, this script uses **MobileSAM** for initial frame selection, and **LiVOS** for getting a pretty reasonable mask.
 
+[Video Guide Here](https://www.youtube.com/watch?v=6cLf_CPe0YE)
+
 ## Disclaimer
 * I built and run this entirely on Linux (Fedora). Theoretically, since PyTorch and OpenVINO are cross-platform, this might work on Windows or macOS, but I haven't actually tried it. If you run into issues on other operating systems, you might need to do some Googling cause... I don't think I'll be of any help really.
 * About updates, I dont know if I can update the script when Kdenlive updates and stuff breaks, the main idea with this was to make a base idea, not really planning on maintaining it really professionally. If it starts breaking for me, I'll push an update (Ideally it shouldn't break but ideals are ideal for a reason)
